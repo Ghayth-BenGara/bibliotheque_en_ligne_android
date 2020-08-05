@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView android:src="@drawable/favicon"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange"
+            android:fontFamily="monospace"
+            android:text="Login"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:letterSpacing="0.1"
+            android:textAllCaps="true"/>
+        
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/colorOrange"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/colorBlue"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorIconDrawable="@null">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Veillez saisissez Email"
+                android:textColor="@color/colorBlue"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="12dp"
+                android:textSize="12sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/colorOrange"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/colorBlue"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorIconDrawable="@null">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Veillez saisissez Password"
+                android:textColor="@color/colorBlue"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="12dp"
+                android:maxLength="10"
+                android:textSize="12sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="-76dp"
+            android:background="@drawable/eye_blue"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Se connecter"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlue"
+            android:background="@drawable/styles_bouton"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textStyle="italic|bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom"
+            android:layout_marginTop="30dp"
+            android:text="Application pour ADMIN"
+            android:textColor="@color/colorOrange"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</ScrollView>

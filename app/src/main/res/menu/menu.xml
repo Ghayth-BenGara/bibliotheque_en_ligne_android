@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/users_menu"
+            android:title="Gestion des comptes"
+            android:icon="@drawable/users_icon">
+        </item>
+        <item android:id="@+id/demnde_menu"
+            android:title="Gestion des demandes"
+            android:icon="@drawable/demande_icon">
+        </item>
+        <item android:id="@+id/livre_menu"
+            android:title="Gestion des livres"
+            android:icon="@drawable/livre_icon">
+        </item>
+        <item android:id="@+id/statistique_menu"
+            android:title="Statistiques"
+            android:icon="@drawable/statistique_icon">
+        </item>
+        <item android:id="@+id/historique_menu"
+            android:title="Historiques"
+            android:icon="@drawable/historique_icon">
+        </item>
+        <item android:id="@+id/sesame_menu"
+            android:title="Sesame"
+            android:icon="@drawable/universite_icon">
+        </item>
+        <item android:id="@+id/aide_menu"
+            android:title="Aide"
+            android:icon="@drawable/aide_icon">
+        </item>
+        <item android:id="@+id/deconnexion_menu"
+            android:title="Déconnexion"
+            android:icon="@drawable/retour_icon">
+        </item>
+</menu>

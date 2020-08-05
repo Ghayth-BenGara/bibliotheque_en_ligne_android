@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".HelpActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_boarding_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlue"
+        android:background="@drawable/styles_bouton"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/boaring_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_boaring_indicators"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_boarding_action"
+        app:layout_constraintEnd_toStartOf="@id/button_boarding_action"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button_boarding_action">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/retour_bouton_help"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circlebackgroundblue"
+            android:src="@drawable/retour_icon_white"
+            android:padding="10dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
